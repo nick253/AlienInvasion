@@ -50,7 +50,7 @@ public class UfoSpawnController : MonoBehaviour
     }
 
     /// <summary>
-    /// This copntrols on the order of events for the UFO spawner. enables and disables the tracktor beam mesh and plays and stops the animation for the tracktor beam.
+    /// This controls the order of events for the UFO spawner. enables and disables the tracktor beam mesh and plays and stops the animation for the tracktor beam.
     /// </summary>
     /// <returns></returns>
     IEnumerator UfoSpawn()
