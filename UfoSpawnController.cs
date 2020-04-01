@@ -44,28 +44,6 @@ public class UfoSpawnController : MonoBehaviour
         }
     }
 
-    private float stayCount = 0.0f;
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (stayCount > 0.25f)
-        {
-            //Debug.Log("staying");
-            stayCount = stayCount - 0.25f;
-        }
-        else
-        {
-            stayCount = stayCount + Time.deltaTime;
-        }
-    }
-
-    void OnTriggerExit(Collider collision)
-    {
-        if (collision.gameObject.tag == "SpawnTrigger")
-        {
-        }
-    }
-
     void startSpawnRoutine()
     {
         StartCoroutine(UfoSpawn());
